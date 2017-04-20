@@ -1,0 +1,10 @@
+/*INSERT INTO `mma` (`nombre`, `descripcion`, `precio`, `imgen`) VALUES ('Short militar', 'Short de Entranamiento Vanum tipo militar', '450.00', '/mma/8.jpg'), ('Careta', 'Careta Venum color negro lisa completa ', '700.00', '/mma/9.jpg')
+INSERT INTO `mma` (`nombre`, `descripcion`, `precio`, `imgen`) VALUES ('Guantes', 'Guantes Profesionales Cleto Reyes de 12 Oz.', '1000.00', '/mma/0.jpg')*/
+
+buscar algun articulo
+if (isset($_POST['buscar'])){
+$consulta=mysqli_query("select * from Productos where nombre like '%".$_POST['buscar']."$'");
+}
+
+
+
